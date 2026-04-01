@@ -1,7 +1,7 @@
 <template>
-  <Header />
-  <div class="about">
-    <h1>This is an about page</h1>
+    <Header />
+<div class="working-groups">
+    <h1>This is a working groups page</h1>
   </div>
 </template>
 

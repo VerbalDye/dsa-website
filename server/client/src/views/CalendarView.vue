@@ -1,7 +1,7 @@
 <template>
-  <Header />
-  <div class="about">
-    <h1>This is an about page</h1>
+    <Header />
+  <div class="calendar">
+    <h1>This is a calendar page</h1>
   </div>
 </template>
 
