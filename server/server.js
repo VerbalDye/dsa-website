@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false, limit: '10mb' }));
 app.use(express.json({ limit: '10mb' }));
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, 'client/dist')));
 app.use(routes);
 
 // sequelize.authenticate().then(() => {
