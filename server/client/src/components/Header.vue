@@ -2,12 +2,29 @@
     <header>
         <router-link to="/"><img src="../assets/DSA-Logo.png" id="header-img"/></router-link>
         <router-link to="/about">About</router-link>
-        <router-link to="/leadership">Leadership</router-link>
+        <router-link to="/blog">Blog</router-link>
         <router-link to="/working-groups">Working Groups</router-link>
         <router-link to="/calendar">Calendar</router-link>
         <router-link to="/donation">Donation</router-link>
+        <!-- <button @click="handleLogout" v-if="this.isLoggedIn()">Logout</button> <router-link to="/login" v-else>Login</router-link> -->
+        <router-link to="/login">Login</router-link>
     </header>
 </template>
+
+<script>
+    import auth from '../utils/auth'
+    export default {
+    name: 'Header',
+    methods: {
+        handleLogout() {
+            auth.logout();
+        },
+        isLoggedIn() {
+            return auth.isLoggedIn()
+        }
+    }
+}
+</script>
 
 <style>
 header {
