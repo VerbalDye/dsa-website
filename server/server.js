@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: false, limit: '10mb' }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.static(path.join(__dirname, 'client/dist')));
 app.use(routes);
-console.log("attempting")
-sequelize.authenticate().then(() => {
+
+// sequelize.authenticate().then(() => {
         app.listen(PORT, () => {
             console.log(`API server running on port ${PORT}`);
         });
-});
+// });
