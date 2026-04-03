@@ -1,3 +1,17 @@
+:root {
+    --dsa-red: #EC1F27;
+    --red-tint-1: #F04C53;
+    --red-tint-2: #F4797E;
+    --red-tint-3: #F7A5A9;
+    --red-tint-4: #FBD2D4;
+    --white: rgb(255, 255, 255);
+    --dsa-black: #231F20;
+    --black-tint-1: #3B3838;
+    --black-tint-2: #605C5C;
+    --black-tint-3: #8C8989;
+    --black-tint-4: #C1C0BF;
+}
+
 * {
   margin: 0px;
   padding: 0px
@@ -5,4 +19,121 @@
 
 body {
   font-family: 'Lexend', sans-serif;
+  color: var(--dsa-black);
+}
+
+button {
+  font-family: 'Lexend', sans-serif;
+}
+
+.space {
+    margin: 10px;
+    padding: 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.grid-less {
+    margin: 10px;
+}
+
+.grid-less tr,
+.grid-less thead,
+.grid-less th,
+.grid-less tbody,
+.grid-less td {
+    border: none;
+}
+
+.grid-less th, .grid-less td {
+    text-align: left;
+    padding: 5px;
+}
+
+.grid-less th {
+    margin-right: 25px;
+    color: var(--dsa-black);
+}
+
+/* .full-table {
+
+} */
+
+.full-table thead {
+    background-color: var(--red-tint-1);
+    color: var(--white);
+    text-align: center;
+    font-weight: normal;
+}
+
+.full-table th {
+    border-bottom: var(--dsa-black) 2px solid;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.full-table td {
+    border-bottom: var(--dsa-black) 1px solid;
+    padding: 5px 10px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+}
+
+.site-container {
+    display: flex;
+}
+
+.content {
+    flex-grow: 1;
+    margin: 40px
+}
+
+.card {
+    background-color: var(--black-tint-4);
+    padding: 10px;
+    margin: 5px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.card-with-title {
+    background-color: var(--black-tint-4);
+    padding: 30px 10px 10px 10px;
+    position: relative;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.card-title {
+    background-color: var(--red-tint-1);
+    color: var(--white);
+    width: calc(100% - 30px);
+    padding: 3px 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--dsa-red);
+    border: none;
+    margin: 0 3px;
+}
+
+button:active {
+    background-color: var(--white);
+    color: var(--dsa-red);
 }

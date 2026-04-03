@@ -5,9 +5,9 @@
         <router-link to="/blog">Blog</router-link>
         <router-link to="/working-groups">Working Groups</router-link>
         <router-link to="/calendar">Calendar</router-link>
-        <router-link to="/donation">Donation</router-link>
-        <!-- <button @click="handleLogout" v-if="this.isLoggedIn()">Logout</button> <router-link to="/login" v-else>Login</router-link> -->
-        <router-link to="/login">Login</router-link>
+        <!-- <router-link to="/donation">Donation</router-link> -->
+        <button @click="handleLogout" v-if="this.isLoggedIn()">Logout</button> <router-link to="/login" v-else>Login</router-link>
+        <!-- <router-link to="/login">Login</router-link> -->
     </header>
 </template>
 
@@ -29,23 +29,27 @@
 <style>
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(0,0,0,0);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--black-tint-4)
 }
 #header-img {
     height: 50px;
-    margin: 5px;
+    /* margin: 5px; */
 }
 header a {
     text-decoration: none;
     color: inherit;
     padding: 10px;
+    font-size: 20px;
 }
 header button {
     border: none;
     background-color: transparent;
     color: var(--black);
+    padding: 10px;
+    font-size: 18px;
 }
 </style>

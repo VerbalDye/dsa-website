@@ -27,11 +27,11 @@ class AuthService {
     isLoggedIn() {
         return (this.getToken(true)? true : false);
     }
-    // async isAdmin() {
-    //     let data = await dataRequest("/api/user/admin", "GET");
-    //     // console.log(data.admin);
-    //     return data.admin;
-    // }
+    async isAdmin() {
+        let data = await dataRequest("/api/user/admin", "GET");
+        console.log(data.admin);
+        return data.admin;
+    }
     async logout() {
         let data = await dataRequest("/api/user/logout", "POST")
         window.location.assign('/login');
