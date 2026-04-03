@@ -10,4 +10,6 @@ let sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.
     logging: false
 });
 
+console.log(sequelize);
+
 module.exports = sequelize;
